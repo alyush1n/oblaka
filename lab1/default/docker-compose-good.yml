@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ubuntu1:
+    image: ubuntu:20.04
+    container_name: my-ubuntu1
+    command: tail -f /dev/null
+  ubuntu2:
+    image: ubuntu:20.04
+    container_name: my-ubuntu2
+    command: tail -f /dev/null

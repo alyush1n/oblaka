@@ -1,0 +1,14 @@
+# bad practice 1 - latest
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y curl
+
+CMD ["tail", "-f", "/dev/null"]
+
+# bad practice 2 - multiple services inside 1 container
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get install -y curl
+
+# bad practice 3 - POST-request
+CMD ["curl", "-X", "POST", "https://httpbin.org/post"]
