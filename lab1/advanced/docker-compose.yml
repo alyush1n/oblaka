@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile_app
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
